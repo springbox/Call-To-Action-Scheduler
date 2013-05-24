@@ -119,7 +119,7 @@ if ( ! class_exists( 'Call_To_Action_Scheduler_Module') ) {
 		 */
 		public function metabox_advanced_using_shortcode() {
 
-			$content = '<p>' . __( 'If you would like to show your call to action within a post, page or other content simply add the shortcode <em>[call-to-action] where you would like it to appear. You can limit the shortcode to a specific call to action category by addint <em>cat=[category id]</em> to the shortcode. For example, <em>[call-to-action cat="6"]</em> would list every available call to action in category 6.', $this->core->plugin->globals['plugin_hook'] ) . '</p>';
+			$content = '<p>' . __( 'If you would like to show your call to action within a post, page or other content simply add the shortcode <em>[call-to-action]</em> where you would like it to appear. You can limit the shortcode to a specific call to action category by addint <em>cat=[category id]</em> to the shortcode. For example, <em>[call-to-action cat="6"]</em> would list every available call to action in category 6.', $this->core->plugin->globals['plugin_hook'] ) . '</p>';
 
 			echo $content;
 
