@@ -137,24 +137,33 @@ if ( ! class_exists( 'Call_To_Action_Scheduler_Module') ) {
 			$args = array(
 				'post_type' 	=> 'call_to_action',
 				'post_status' 	=> 'publish',
-				'meta_query' => array(
+				'meta_query' 		=> array(
 					array( 
-						'key' => '_sb_cta_start_date', 
-						'value' => time(),
-						'type' => 'numeric',
-						'compare' => '<=',
+						'key' 			=> '_sb_cta_start_date', 
+						'value' 		=> time(),
+						'type' 			=> 'numeric',
+						'compare' 		=> '<=',
 					),
 					array( 
-						'key' => '_sb_cta_end_date', 
-						'value' => time(), 
-						'type' => 'numeric',
-						'compare' => '>=',
+						'key' 			=> '_sb_cta_end_date', 
+						'value' 		=> time(), 
+						'type' 			=> 'numeric',
+						'compare' 		=> '>=',
 					),
 				),
 			);
 
 			if ( isset( $atts['cat'] ) ) {
-				$args['cat'] = absint( $instance['category'] );
+
+				$args['tax_query'] = array(
+					array(
+						'taxonomy' 		=> 'cta_type',
+						'field' 		=> 'id',
+						'terms' 		=> absint( $atts['cat'] ),
+						'operator' 		=> 'IN',
+					),
+				);
+				
 			}
 
 			$ctas = new WP_Query( $args );

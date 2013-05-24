@@ -120,7 +120,16 @@ class SB_Call_To_Action_Widget extends WP_Widget {
 		);
 
 		if ( isset( $instance['category'] ) && $instance['category'] !== 0 ) {
-			$args['cat'] = absint( $instance['category'] );
+
+			$args['tax_query'] = array(
+				array(
+					'taxonomy' 		=> 'cta_type',
+					'field' 		=> 'id',
+					'terms' 		=> absint( $instance['category'] ),
+					'operator' 		=> 'IN',
+				),
+			);
+			
 		}
 
 		$ctas = new WP_Query( $args );
