@@ -16,7 +16,7 @@ Released under the terms of the GNU General Public License.
 
 Add a scheduled call to action to a WordPress Widget or shortcode. This plugin will allow you to create "Calls to Action" which can be specified to only appear on the specified dates. This could be useful in situations such as an ongoing content where you would want the user to see a different call to action every time the prize or other situation changes. 
 
-Calls to action can be put in any widget area or within posts or pages content itself using a simple [call-to-action] shortcode. In addition, calls to action can be limited to a specific category allowing for multiple concurent calls to action in different parts of your site.
+Calls to action can be put in any widget area or within posts or pages content itself using a simple [call_to_action] shortcode. In addition, calls to action can be limited to a specific category allowing for multiple concurent calls to action in different parts of your site.
 
 == Installation ==
 
