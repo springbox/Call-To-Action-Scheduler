@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Call to Action Scheduler
 	Plugin URI: http://springbox.com
-	Description: Schedule call-to-action links in a widget
+	Description: Schedule call-to-action links in a widget or with a shortcode
 	Version: 0.0.1
 	Text Domain: call_to_action_scheduler
 	Domain Path: /languages

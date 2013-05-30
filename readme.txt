@@ -7,7 +7,7 @@ Requires at least: 3.6
 Tested up to: 3.6
 Stable tag: 0.0.1
 
-Schedule call to action graphics or other content in a WordPress Widget or shortcode
+Schedule call to action graphics or other content in a WordPress Widget or with a shortcode.
 
 == License == 
 Released under the terms of the GNU General Public License. 
