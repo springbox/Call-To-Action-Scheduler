@@ -3,7 +3,7 @@
 	Plugin Name: Call to Action Scheduler
 	Plugin URI: http://springbox.com
 	Description: Schedule call-to-action links in a widget or with a shortcode
-	Version: 0.0.1
+	Version: 0.0.2
 	Text Domain: call_to_action_scheduler
 	Domain Path: /languages
 	Author: Springbox
@@ -47,11 +47,11 @@ if ( ! class_exists( 'SB_Call_To_Action_Scheduler' ) ) {
 				'plugin_file'			=> __FILE__, //the main plugin file
 				'plugin_access_lvl' 	=> 'manage_options', //Access level required to access plugin options
 				'plugin_dir' 			=> plugin_dir_path( __FILE__ ), //the path of the plugin directory
-				'plugin_homepage' 		=> 'http://www.wordpress.org', //The plugins homepage on WordPress.org
+				'plugin_homepage' 		=> 'http://wordpress.org/plugins/call-to-action-scheduler/', //The plugins homepage on WordPress.org
 				'plugin_hook'			=> 'call_to_action_scheduler', //the hook for text calls and other areas
 				'plugin_name' 			=> __( 'Call to Action Scheduler', 'call_to_action_scheduler' ), //the name of the plugin
 				'plugin_url' 			=> plugin_dir_url( __FILE__ ), //the URL of the plugin directory
-				'support_page' 			=> 'http://wordpress.org/', //address of the WordPress support forums for the plugin
+				'support_page' 			=> 'http://wordpress.org/support/plugin/call-to-action-scheduler', //address of the WordPress support forums for the plugin
 			);
 
 			$this->top_level_menu = false; //true if top level menu, else false

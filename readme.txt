@@ -5,7 +5,7 @@ Donate link: http://springbox.com
 Tags: Springbox, plugin, framework
 Requires at least: 3.6
 Tested up to: 3.6
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 
 Schedule call to action graphics or other content in a WordPress Widget or with a shortcode.
 
@@ -31,6 +31,9 @@ Calls to action can be put in any widget area or within posts or pages content i
 == Screenshots ==
 
 == Changelog ==
+
+= 0.0.2 =
+* Correct WordPress.org links
 
 = 0.0.1 =
 * Initial release
